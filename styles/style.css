@@ -1,40 +1,49 @@
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 92px 24px 2831px 24px;
-    width: 1052px;
-    height: 105px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px 0;
 }
 
 .header__menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 391.48px;
-    height: 22px;
-    list-style-type: circle;
-    font-size: 18px;
-    margin-right: 36px;
+  
 }
 
+.header__links-list {
+  display: flex;
+  gap: 33px;
+  list-style-type: circle;
+}
+.header__links-list-item {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.13px;
+  /* text-align: left; */
+  letter-spacing: 1%;
+}
 .header__links-list-item_no-bullit {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .header__logo {
-    width: 148px;
-    height: 105px;
+  width: 129px;
+  height: 105px;
 }
 
 .address {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 240.52px;
-    height: 98px;
-    font-size: 18px;
-    margin-left: 184px;
-    margin-bottom: 5px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; */
+  max-width: 240.52px;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.3px;
+  letter-spacing: 0.01em;
+}
+
+.header__address {
+    justify-self: end;
 }
