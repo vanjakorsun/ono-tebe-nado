@@ -49,7 +49,7 @@ header {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  height: 757px;
+  min-height: 757px;
   margin: 96px 0 0 0;
   color: rgb(255, 255, 255);
   background-image: url(../images/cover.jpg);
@@ -77,22 +77,26 @@ header {
   letter-spacing: 0.3em;
 }
 
+.aligned-text:first-child {
+  line-height: 115px;
+}
+
 .aligned-text {
   display: block;
   text-align: left;
-  margin-top: 8px;
+  gap: 20px;
 }
 
 .aligned-text_center {
   display: block;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .aligned-text_right {
-  margin-top: 18px;
   display: block;
   text-align: right;
+  margin-top: 20px;
 }
 
 .letter-spacing-extended {
@@ -113,7 +117,7 @@ header {
   gap: 79px;
 }
 
-.сover__description-text {
+.cover__description-text {
   text-transform: uppercase;
   font-size: 22px;
   word-spacing: 18px;
@@ -122,13 +126,14 @@ header {
 
 .bet-button {
   padding: 12px 32px;
-  border: 1px solid rgb(255, 255, 255);
   background-color: transparent;
   text-transform: uppercase;
+  font-family: inherit;
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
   color: rgb(255, 255, 255);
+  border: 1px solid currentColor;
 }
 
 .lots {
@@ -146,6 +151,8 @@ header {
 
 .lots__card-list {
   display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
   gap: 25px;
   margin: 27px 0 30px 0;
   list-style: none;
@@ -214,7 +221,7 @@ header {
   display: flex;
   margin: 146px 0 0 0;
   padding: 0 24px;
-  height: 595px;
+  min-height: 595px;
 }
 
 .about__logo {
@@ -224,7 +231,7 @@ header {
   margin: 35px 0 0 47px;
   width: 240px;
   height: 240px;
-  border-radius: 180px;
+  border-radius: 50%;
   background-color: rgba(0, 0, 0);
 }
 
@@ -238,8 +245,12 @@ header {
   display: flex;
   position: relative;
   flex-direction: column;
-  padding: 136px 0 0 72px;
+  padding: 148px 0 0 72px;
   width: 746px;
+  gap: 113px;
+  font-size: 20px;
+  letter-spacing: 0.1px;
+  line-height: 24px;
 }
 
 .about__title {
@@ -249,25 +260,19 @@ header {
 }
 
 .about__text {
-  display: flex;
   padding: 100px 5px 0 0;
-  letter-spacing: 0.1px;
-  font-size: 20px;
-  line-height: 24px;
 }
 
-.about__text-1 {
-  display: flex;
-  padding: 24px 5px 0 0;
-  font-size: 20px;
-  line-height: 24px;
+.about__column:first-child {
+  padding-bottom: 24px;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 180px 50px 0;
+  padding: 184px 50px 0;
 }
+
 .footer__menu {
   display: flex;
   font-size: 18px;
@@ -288,8 +293,8 @@ header {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  width: 240px;
-  height: 48px;
+  gap: 48px;
+  min-height: 48px;
 }
 
 .footer__social-icon {
