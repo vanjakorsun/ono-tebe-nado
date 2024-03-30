@@ -50,7 +50,7 @@ header {
   display: flex;
   flex-direction: column;
   min-height: 757px;
-  margin: 96px 0 0 0;
+  margin: 93px 0 0 0;
   color: rgb(255, 255, 255);
   background-image: url(../images/cover.jpg);
   background-size: cover;
@@ -71,6 +71,7 @@ header {
   flex-direction: column;
   text-transform: uppercase;
   justify-content: center;
+  gap: 20px;
   font-size: 100px;
   font-weight: 700;
   line-height: 100px;
@@ -84,19 +85,16 @@ header {
 .aligned-text {
   display: block;
   text-align: left;
-  gap: 20px;
 }
 
 .aligned-text_center {
   display: block;
   text-align: center;
-  margin-top: 20px;
 }
 
 .aligned-text_right {
   display: block;
   text-align: right;
-  margin-top: 20px;
 }
 
 .letter-spacing-extended {
@@ -221,7 +219,6 @@ header {
   display: flex;
   margin: 146px 0 0 0;
   padding: 0 24px;
-  min-height: 595px;
 }
 
 .about__logo {
@@ -254,23 +251,23 @@ header {
 }
 
 .about__title {
+  display: flex;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .about__text {
-  padding: 100px 5px 0 0;
-}
-
-.about__column:first-child {
-  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 20px;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 184px 50px 0;
+  padding: 179px 50px 0;
 }
 
 .footer__menu {
@@ -294,7 +291,6 @@ header {
   justify-content: space-between;
   list-style-type: none;
   gap: 48px;
-  min-height: 48px;
 }
 
 .footer__social-icon {
